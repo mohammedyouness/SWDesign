@@ -1,0 +1,12 @@
+{
+ "carOne": {
+    "Type": "BMW",
+    "Speed": "500",
+    "Color": "Black"
+ },
+ "carTwo": {
+     "Type": "Audi",
+     "Speed": "400",
+     "Color": "Grey"
+  }
+}
