@@ -1,4 +1,4 @@
-package learn.exercises;
+package learn.data;
 
 import com.opencsv.exceptions.CsvException;
 
@@ -11,8 +11,8 @@ import java.io.IOException;
 public class App 
 {
     public static void main( String[] args ) throws IOException, CsvException {
-        JsonFileReader jsonFileReader = new JsonFileReader();
-        jsonFileReader.setFilePath("jsonData.json");
+
+        JsonFileReader jsonFileReader = new JsonFileReader("./src/main/resources/jsonData.json");
         System.out.println("Type: " + jsonFileReader.getData("Type"));
         System.out.println("Speed: " + jsonFileReader.getData("Speed"));
         System.out.println("Color: " + jsonFileReader.getData("Color"));
@@ -28,5 +28,6 @@ public class App
         CSVFileReader csvFileReader = new CSVFileReader();
         csvFileReader.setFilePath("csvData.csv");
         System.out.println(csvFileReader.getData(1,1));
+
     }
 }

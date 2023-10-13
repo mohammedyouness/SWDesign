@@ -1,4 +1,4 @@
-package learn.exercises;
+package learn.data;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -16,10 +16,10 @@ public class ExcelFileReader {
         Sheet worksheet = workbook.getSheetAt(0);
         // Get the cell that contains the value that you want to read
         Cell cell = worksheet.getRow(rowNum).getCell(cellNum);
+        // Close the workbook
         workbook.close();
         // Get the value of the cell
         return cell.getStringCellValue();
-        // Close the workbook
     }
 
 }

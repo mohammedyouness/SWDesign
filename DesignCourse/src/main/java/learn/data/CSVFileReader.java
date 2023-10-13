@@ -1,4 +1,4 @@
-package learn.exercises;
+package learn.data;
 
 import com.opencsv.CSVParserBuilder;
 import com.opencsv.CSVReader;

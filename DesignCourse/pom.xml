@@ -16,6 +16,12 @@
 
   <dependencies>
       <dependency>
+          <groupId>com.microsoft.playwright</groupId>
+          <artifactId>playwright</artifactId>
+          <version>1.38.0</version>
+      </dependency>
+
+      <dependency>
           <groupId>org.apache.poi</groupId>
           <artifactId>poi</artifactId>
           <version>5.2.3</version>
@@ -30,6 +36,23 @@
           <artifactId>opencsv</artifactId>
           <version>5.8</version>
       </dependency>
+      <dependency>
+          <groupId>org.seleniumhq.selenium</groupId>
+          <artifactId>selenium-java</artifactId>
+          <version>4.12.1</version>
+      </dependency>
+      <dependency>
+          <groupId>io.github.bonigarcia</groupId>
+          <artifactId>webdrivermanager</artifactId>
+          <version>5.5.3</version>
+      </dependency>
+      <dependency>
+          <groupId>org.testng</groupId>
+          <artifactId>testng</artifactId>
+          <version>7.8.0</version>
+          <scope>test</scope>
+      </dependency>
+
 
   </dependencies>
     <build>
@@ -37,6 +60,8 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <!-- References to interface static methods are allowed only at source level 1.8 or above -->
                 <configuration>
                     <source>20</source>
                     <target>20</target>

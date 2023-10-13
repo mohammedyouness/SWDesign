@@ -1,4 +1,4 @@
-package learn.exercises;
+package learn.data;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -15,6 +15,7 @@ public class TextFileReader {
     }
     public String getData(String key) throws IOException {
 
+
         // Read the lines of the text file
         String line;
         String extractedText = "";
@@ -28,6 +29,7 @@ public class TextFileReader {
         // Close the reader
         filePath.close();
         return extractedText;
+
     }
 
 
