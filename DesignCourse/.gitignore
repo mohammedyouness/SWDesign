@@ -2,9 +2,6 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-/src/main/resource/*
-/src/main/java/learn/data/*
-/src/main/java/solid/*
 
 
 
