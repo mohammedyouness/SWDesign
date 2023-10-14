@@ -2,6 +2,7 @@ package learn.selenium.pages;
 
 import learn.selenium.core.ui.Button;
 import learn.selenium.core.ui.Driver;
+import learn.selenium.core.ui.Element;
 import learn.selenium.core.ui.TextBox;
 import org.openqa.selenium.By;
 
@@ -9,8 +10,7 @@ public class DemoBlaze {
 Driver webDriver;
     public DemoBlaze(Driver webDriver) {
         this.webDriver = webDriver;
-        Button.setDriver(webDriver.getWebDriver());
-        TextBox.setDriver(webDriver.getWebDriver());
+        Element.setDriver(webDriver.getWebDriver());
     }
 
     public Button signUp = new Button(By.id("signin2"));
