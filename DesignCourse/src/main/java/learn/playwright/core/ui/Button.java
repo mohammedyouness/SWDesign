@@ -8,8 +8,6 @@ import com.microsoft.playwright.Page;
 public class Button {
     // Locators
     private final Locator button;
-    // Driver
-    private static Page page;
     // Constructor
     public Button(String selector)
     {

@@ -7,8 +7,8 @@ public abstract class Element {
     protected By locator;
     protected static WebDriver webDriver;
 
-    public void setLocator(By element) {
-        locator = element;
+    public void setLocator(By locator) {
+        this.locator = locator;
     }
     public static void setDriver(WebDriver driver) {
         webDriver = driver;

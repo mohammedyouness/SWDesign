@@ -4,7 +4,12 @@ import learn.selenium.core.ui.Button;
 import learn.selenium.core.ui.Driver;
 import learn.selenium.core.ui.Element;
 import learn.selenium.core.ui.TextBox;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class DemoBlaze {
 Driver webDriver;
@@ -31,6 +36,12 @@ Driver webDriver;
         this.username.type(username);
         this.password.type(password);
         this.signUpModal.clickOn();
+    }
+    public String getAlertMessage() {
+        WebDriverWait wait = new WebDriverWait(webDriver.getWebDriver(), Duration.ofSeconds(1));
+        wait.until(ExpectedConditions.alertIsPresent());
+        Alert alert = webDriver.getWebDriver().switchTo().alert();
+        return  alert.getText();
     }
 
 }

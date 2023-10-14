@@ -2,6 +2,7 @@ package learn.selenium;
 
 import learn.selenium.core.ui.Driver;
 import learn.selenium.pages.DemoBlaze;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -19,7 +20,8 @@ public class AppTest {
 
     @Test
     public void verifySignUp() {
-        demoBlaze.signUp("brad","P@ssw0rd");
+        demoBlaze.signUp("SAM","123456");
+        Assert.assertEquals(demoBlaze.getAlertMessage(), "Sign up successful.");
     }
 
     @AfterTest

@@ -7,8 +7,6 @@ import com.microsoft.playwright.Page;
 public class TextBox {
     // Locators
     private final Locator textbox;
-    // Driver
-    private static Page page;
     // Constructor
     public TextBox(String selector) {
         this.textbox = Driver.page.locator(selector);
