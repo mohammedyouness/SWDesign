@@ -3,21 +3,14 @@ package learn.selenium.core.ui;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class Button {
-    // Locators
-    private final By button;
-    // Driver
-    private static WebDriver webDriver;
-    public static void setDriver(WebDriver driver) {
-        webDriver = driver;
-    }
+public class Button extends Element{
     // Constructor
     public Button(By button) {
-        this.button = button;
+        this.setLocator(button);
     }
 
     // Actions
     public void clickOn() {
-        webDriver.findElement(button).click();
+        webDriver.findElement(locator).click();
     }
 }
