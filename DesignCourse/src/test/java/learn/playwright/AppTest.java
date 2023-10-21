@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 public class AppTest {
 
+
     Driver driver = new Driver();
     DemoBlaze demoBlaze = new DemoBlaze(driver);
 

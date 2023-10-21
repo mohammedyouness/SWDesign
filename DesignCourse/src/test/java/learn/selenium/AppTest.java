@@ -20,8 +20,10 @@ public class AppTest {
 
     @Test
     public void verifySignUp() {
-        demoBlaze.signUp("SAM","123456");
+        demoBlaze.signUp("MOCK","123456");
         Assert.assertEquals(demoBlaze.getAlertMessage(), "Sign up successful.");
+
+
     }
 
     @AfterTest

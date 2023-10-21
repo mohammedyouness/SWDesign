@@ -38,7 +38,7 @@ Driver webDriver;
         this.signUpModal.clickOn();
     }
     public String getAlertMessage() {
-        WebDriverWait wait = new WebDriverWait(webDriver.getWebDriver(), Duration.ofSeconds(1));
+        WebDriverWait wait = new WebDriverWait(webDriver.getWebDriver(), Duration.ofSeconds(2));
         wait.until(ExpectedConditions.alertIsPresent());
         Alert alert = webDriver.getWebDriver().switchTo().alert();
         return  alert.getText();
